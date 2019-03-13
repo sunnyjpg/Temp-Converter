@@ -1,0 +1,59 @@
+import java.util.Scanner;
+public class TempConvert {
+    public static void main(String[] arg){
+
+     
+        {
+            Scanner keyboard = new Scanner(System.in);
+            System.out.println ("Press 1 to convert from Fahrenheit to Celsius." +
+                
+                 " Press 2 to convert from Celsius to Fahrenheit.");
+           
+            int inputVal = keyboard.nextInt();
+            switch (inputVal) {
+                case 1: 
+                System.out.println ("Fahrenheit\t|\tCelsius");
+                int F1 = 32;
+                int C1;
+                while ( F1 <= 52) {
+                        C1 = (5/9) * (F1 - 32);
+                        System.out.println( F1 + "\t" + "\t\t" + C1);
+                        F1++;
+                        
+                }
+                break;
+                case 2: System.out.println ("Celsius\t|\tFahrenheit");
+                int C2 = 0;
+                int F2;
+                while ( C2 <= 20) {
+                        F2 = (9/5) * C2 + 32;
+                        System.out.println( C2 + "\t" + "\t\t" + F2);
+                        C2++;
+                }
+                        
+                break;
+                default: System.out.println("Error. Must type 1 or 2.");
+                keyboard.next();
+                break;
+                
+                        
+                        
+                        
+                       
+                        
+                    }
+                  }
+            
+               }
+            }
+            
+
+                
+           
+            
+          
+        
+        
+
+
+           
